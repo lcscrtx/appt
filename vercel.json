@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/legislativo-conectado",
+      "destination": "/Legislativo_Conectado_Camaras_Municipais/Legislativo-Conectado-Apresentacao.html"
+    }
+  ]
+}

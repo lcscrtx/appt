@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legislativo Conectado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wdth,wght,ROND@6..144,25..151,1..1000,0..100&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/lc-logo.svg">
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+<div id="stage">
+  <div class="bg bg-light"></div>
+  <div class="bg bg-dark"></div>
+  <div class="bg bg-blue"></div>
+  <div class="bg bg-paper"></div>
+
+  <!-- paper grid frame -->
+  <div class="frame"><i class="fv" style="left:96px"></i><i class="fv" style="left:1824px"></i></div>
+
+  <!-- chrome -->
+  <div class="chrome">
+    <i class="c-rule"></i>
+    <span class="c-logo" data-logo></span>
+    <span class="c-sec"></span>
+    <span class="c-foot">Legislativo Conectado — Câmaras Municipais</span>
+    <span class="c-page"></span>
+  </div>
+
+  <!-- 01 · CAPA -->
+  <section class="slide cv" data-theme="paper" data-chrome="off" data-title="Capa" data-sec="">
+    <header class="cv-top rv">
+      <span class="cv-logo" data-logo></span>
+      <span class="cv-kind">Apresentação institucional</span>
+    </header>
+
+    <div class="cv-copy">
+      <p class="cv-eyebrow rv">Legislativo Conectado</p>
+      <h1 class="rv" style="--d:.08s">A Câmara que o cidadão<br><span>vê, usa e lembra.</span></h1>
+      <p class="cv-sub rv" style="--d:.2s">A porta de entrada digital das Câmaras Municipais.</p>
+    </div>
+
+    <div class="cv-art hub rv" style="--d:.15s">
+      <svg class="hub-svg" viewBox="0 0 824 760">
+        <g class="hub-rings">
+          <circle cx="412" cy="360" r="96"/>
+          <circle cx="412" cy="360" r="150" class="dashed"/>
+          <circle cx="412" cy="360" r="212"/>
+          <circle cx="412" cy="360" r="282" class="dashed"/>
+        </g>
+        <g class="hub-wires">
+          <path id="hw-l" d="M200 360 H348"/>
+          <path id="hw-r" d="M476 360 H624"/>
+          <path id="hw-t1" d="M320 142 C 320 220, 392 240, 400 297"/>
+          <path id="hw-t2" d="M412 142 V 296"/>
+          <path id="hw-t3" d="M504 142 C 504 220, 432 240, 424 297"/>
+          <path id="hw-b" d="M412 424 V 606"/>
+        </g>
+        <g class="hub-packets">
+          <circle r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#hw-l"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#hw-r"/></animateMotion></circle>
+          <circle r="3.5"><animateMotion dur="3s" begin=".4s" repeatCount="indefinite"><mpath href="#hw-t1"/></animateMotion></circle>
+          <circle r="3.5"><animateMotion dur="3s" begin="1.9s" repeatCount="indefinite"><mpath href="#hw-t3"/></animateMotion></circle>
+        </g>
+      </svg>
+
+      <div class="hub-core"><span data-seat></span></div>
+
+      <div class="hub-seg" style="left:412px;top:120px">
+        <span>Protocolo</span><span>Triagem</span><span>Pesquisas</span>
+      </div>
+
+      <div class="hub-card" style="left:0;top:242px">
+        <span><i class="ic" data-icon="phone"></i>App com IA</span>
+        <span><i class="ic" data-icon="globe"></i>Site da Câmara</span>
+        <span><i class="ic" data-icon="chat"></i>WhatsApp oficial</span>
+        <span><i class="ic" data-icon="tv"></i>TV Câmara</span>
+        <span><i class="ic" data-icon="hand"></i>LIBRAS</span>
+      </div>
+      <span class="hub-pill" style="left:274px;top:360px">Cidadão</span>
+
+      <div class="hub-card" style="left:624px;top:264px">
+        <span><i class="ic" data-icon="user"></i>Vereadores</span>
+        <span><i class="ic" data-icon="building"></i>Mesa Diretora</span>
+        <span><i class="ic" data-icon="users"></i>Ouvidoria</span>
+        <span><i class="ic" data-icon="megaphone"></i>Comunicação</span>
+      </div>
+      <span class="hub-pill" style="left:550px;top:360px">Câmara</span>
+
+      <span class="hub-pill" style="left:412px;top:510px">IA com fonte oficial</span>
+      <div class="hub-seg" style="left:412px;top:606px">
+        <span><i class="ic" data-icon="file"></i>Leis</span><span><i class="ic" data-icon="file"></i>Atas</span><span><i class="ic" data-icon="file"></i>Proposições</span>
+      </div>
+    </div>
+
+    <div class="cv-strip rv" style="--d:.4s">
+      <div class="cv-cell meta"><small>Apresentado para</small><span class="edit" contenteditable="true" spellcheck="false" data-key="camara" data-ph="Câmara Municipal de ___"></span></div>
+      <div class="cv-cell meta"><small>Data</small><span class="edit" contenteditable="true" spellcheck="false" data-key="data" data-ph="[data]"></span></div>
+      <div class="cv-cell meta"><small>Produto</small>Legislativo Conectado</div>
+      <div class="cv-cell meta"><small>Pressione</small>→ para começar</div>
+    </div>
+  </section>
+
+  <!-- 02 · PERGUNTA -->
+  <section class="slide pp" data-theme="paper" data-title="A pergunta" data-sec="Ponto de partida">
+    <div class="pq">
+      <p class="pp-eyebrow rv">Ponto de partida</p>
+      <h2 class="pp-title q1 rv" style="--d:.08s">O que a Câmara votou<br>na última sessão?</h2>
+      <h2 class="pp-title q2 frag">Quantas pessoas da cidade<br>sabem responder?</h2>
+    </div>
+    <figure class="city-card rv" style="--d:.2s">
+      <div class="cc cc-a">
+        <header>
+          <span><b>Sessão ordinária</b><small>O que a Câmara votou</small></span>
+          <span class="chip">5 itens na pauta</span>
+        </header>
+        <ul class="votes">
+          <li><span class="v-id">PL 045/2026</span><span class="v-t">Recapeamento de vias no Bairro São José</span><span class="st ok">Aprovado</span></li>
+          <li><span class="v-id">PL 051/2026</span><span class="v-t">Horário estendido nas unidades de saúde</span><span class="st ok">Aprovado</span></li>
+          <li><span class="v-id">Req. 118/2026</span><span class="v-t">Informações sobre o transporte escolar</span><span class="st ok">Aprovado</span></li>
+          <li><span class="v-id">Moção 09/2026</span><span class="v-t">Aplauso aos agentes comunitários de saúde</span><span class="st ok">Aprovada</span></li>
+          <li><span class="v-id">PL 038/2026</span><span class="v-t">Criação do Conselho Municipal da Juventude</span><span class="st">Adiado</span></li>
+        </ul>
+        <figcaption>Pauta ilustrativa</figcaption>
+      </div>
+      <div class="cc cc-b">
+        <header>
+          <span><b>A cidade</b><small>Cada ponto, um grupo de moradores</small></span>
+          <span class="legend"><i class="lg-yes"></i>Sabem responder<i class="lg-no"></i>Não sabem</span>
+        </header>
+        <div class="city-grid" data-n="180"></div>
+        <figcaption><b>Quase ninguém.</b><span>Ilustração</span></figcaption>
+      </div>
+    </figure>
+  </section>
+
+  <!-- 03 · PROBLEMAS -->
+  <section class="slide pp" data-theme="paper" data-title="Três problemas" data-sec="O cenário">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">O cenário</p>
+      <h2 class="pp-title rv" style="--d:.08s">Três problemas que<br><span>toda Câmara conhece.</span></h2>
+    </div>
+    <div class="cells3">
+      <article class="cell frag">
+        <div class="ui">
+          <div class="ui-head"><b>Plenário</b><span class="chip">Fora do radar</span></div>
+          <div class="ui-body vis-ghost"><svg class="mini-hemi" data-n="34" viewBox="0 0 220 120"></svg></div>
+        </div>
+        <span class="cell-n">01</span>
+        <h3>A Câmara é invisível</h3>
+        <p>O cidadão confunde vereador com prefeitura e só lembra da Câmara na eleição.</p>
+      </article>
+      <article class="cell frag">
+        <div class="ui">
+          <div class="ui-head"><b>Demandas recebidas</b><span class="chip">Sem protocolo</span></div>
+          <div class="ui-body vis-lost">
+            <i style="--x:28px;--y:30px;--t:0s"><span class="ic" data-icon="chat"></span>WhatsApp pessoal</i>
+            <i style="--x:200px;--y:84px;--t:1.3s"><span class="ic" data-icon="users"></span>Corredor</i>
+            <i style="--x:56px;--y:140px;--t:2.6s"><span class="ic" data-icon="phone"></span>Telefone</i>
+            <i style="--x:236px;--y:180px;--t:3.4s"><span class="ic" data-icon="file"></span>Bilhete</i>
+          </div>
+        </div>
+        <span class="cell-n">02</span>
+        <h3>As demandas se perdem</h3>
+        <p>Chegam por WhatsApp pessoal, corredor e telefone, sem protocolo nem resposta.</p>
+      </article>
+      <article class="cell frag">
+        <div class="ui">
+          <div class="ui-head"><b>Demandas por bairro</b><span class="chip">Sem dados</span></div>
+          <div class="ui-body vis-data">
+            <div class="bars-q">
+              <b style="--h:40%;--t:0s"></b><b style="--h:75%;--t:.3s"></b><b style="--h:55%;--t:.6s"></b><b style="--h:90%;--t:.9s"></b><b style="--h:30%;--t:1.2s"></b><b style="--h:62%;--t:1.5s"></b>
+            </div>
+            <div class="axis-q"><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span></div>
+          </div>
+        </div>
+        <span class="cell-n">03</span>
+        <h3>Ninguém tem os dados</h3>
+        <p>Quais bairros mais pedem? Quais temas preocupam? O cidadão ficou satisfeito?</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 · PORTA DE ENTRADA -->
+  <section class="slide pp" data-theme="paper" data-title="A porta de entrada" data-sec="A solução" data-ctrl="flow">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">A solução</p>
+      <h2 class="pp-title rv" style="--d:.08s">A porta de entrada<br><span>digital da Câmara.</span></h2>
+    </div>
+    <p class="pp-aside rv" style="--d:.16s">O cidadão entende, participa e recebe resposta, no app, no site ou no WhatsApp. <b>A IA organiza tudo e entrega ao vereador certo.</b></p>
+    <div class="band rv" style="--d:.24s">
+      <div class="flow">
+        <svg viewBox="0 0 1680 440" class="flow-svg">
+          <g class="hub-rings2">
+            <circle cx="840" cy="220" r="140"/><circle cx="840" cy="220" r="200" class="dashed"/>
+          </g>
+          <g class="wires">
+            <path id="w-in-0" d="M300 80 C 520 80, 560 220, 770 220"/>
+            <path id="w-in-1" d="M300 220 C 520 220, 560 220, 770 220"/>
+            <path id="w-in-2" d="M300 360 C 520 360, 560 220, 770 220"/>
+            <path id="w-out-0" d="M910 220 C 1120 220, 1160 80, 1380 80"/>
+            <path id="w-out-1" d="M910 220 C 1120 220, 1160 220, 1380 220"/>
+            <path id="w-out-2" d="M910 220 C 1120 220, 1160 360, 1380 360"/>
+          </g>
+          <circle cx="840" cy="220" r="70" class="hub-core"/>
+          <circle r="5" class="packet" cx="-50" cy="-50"/>
+        </svg>
+        <div class="hub-label"><span data-seat></span></div>
+        <span class="hub-tag">IA organiza e encaminha</span>
+        <button class="chan" style="top:48px" data-ch="0"><span class="ic" data-icon="phone"></span>App</button>
+        <button class="chan" style="top:188px" data-ch="1"><span class="ic" data-icon="globe"></span>Site da Câmara</button>
+        <button class="chan" style="top:328px" data-ch="2"><span class="ic" data-icon="chat"></span>WhatsApp</button>
+        <div class="dest" style="top:48px"><small>Vereador(a)</small>Pauta Saúde</div>
+        <div class="dest" style="top:188px"><small>Vereador(a)</small>Pauta Infraestrutura</div>
+        <div class="dest" style="top:328px"><small>Vereador(a)</small>Pauta Educação</div>
+        <div class="ticket"><span class="t-msg"></span><span class="t-tags"></span></div>
+      </div>
+      <p class="band-note">Clique em um canal para enviar uma demanda</p>
+    </div>
+  </section>
+
+  <!-- 05 · ORGANOGRAMA -->
+  <section class="slide pp" data-theme="paper" data-title="Como o sistema se organiza" data-sec="Arquitetura" data-ctrl="org">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Arquitetura</p>
+      <h2 class="pp-title rv" style="--d:.08s">Como o sistema<br><span>se organiza.</span></h2>
+    </div>
+    <div class="band rv" style="--d:.2s">
+      <div class="org">
+        <div class="org-map"><svg class="org-svg" viewBox="0 0 1180 510"></svg></div>
+        <aside class="org-panel ui">
+          <div class="ui-head"><b>Detalhe</b><span class="chip op-group"></span></div>
+          <div class="op-body">
+            <h3 class="op-title"></h3>
+            <p class="op-desc"></p>
+          </div>
+          <p class="op-tip">Clique em qualquer bloco do mapa</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · TRÊS PÚBLICOS -->
+  <section class="slide pp" data-theme="paper" data-title="Um produto, três públicos" data-sec="O produto">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">O produto</p>
+      <h2 class="pp-title rv" style="--d:.08s">Um produto,<br><span>três públicos.</span></h2>
+    </div>
+    <div class="cells3">
+      <article class="cell frag">
+        <div class="ui"><div class="ui-head"><b>Para o cidadão</b><span class="chip">Canais</span></div>
+          <ul class="rows">
+            <li><span class="ic" data-icon="phone"></span>App com assistente de IA</li>
+            <li><span class="ic" data-icon="globe"></span>Portal no site da Câmara</li>
+            <li><span class="ic" data-icon="chat"></span>WhatsApp oficial com IA</li>
+            <li><span class="ic" data-icon="tv"></span>TV Câmara ao vivo</li>
+          </ul>
+        </div>
+        <span class="cell-n">01</span>
+        <h3>Cidadão</h3>
+        <p>Entende, participa e recebe resposta pelo canal que preferir.</p>
+      </article>
+      <article class="cell frag">
+        <div class="ui"><div class="ui-head"><b>Para o vereador</b><span class="chip">Painel</span></div>
+          <ul class="rows">
+            <li><span class="ic" data-icon="panel"></span>Painel do Vereador</li>
+            <li><span class="ic" data-icon="pin"></span>Demandas por bairro e tema</li>
+            <li><span class="ic" data-icon="clock"></span>Histórico de respostas</li>
+            <li><span class="ic" data-icon="clipboard"></span>Pesquisas na sua região</li>
+          </ul>
+        </div>
+        <span class="cell-n">02</span>
+        <h3>Vereador</h3>
+        <p>Recebe a demanda certa e registra a prova do trabalho que faz.</p>
+      </article>
+      <article class="cell frag">
+        <div class="ui"><div class="ui-head"><b>Para a Câmara</b><span class="chip">Gestão</span></div>
+          <ul class="rows">
+            <li><span class="ic" data-icon="file"></span>Processo eletrônico (zero papel)</li>
+            <li><span class="ic" data-icon="clipboard"></span>Pesquisas regionalizadas</li>
+            <li><span class="ic" data-icon="users"></span>Área das Comissões</li>
+            <li><span class="ic" data-icon="megaphone"></span>Comunicação ativa</li>
+            <li><span class="ic" data-icon="gauge"></span>Painel de gestão</li>
+          </ul>
+        </div>
+        <span class="cell-n">03</span>
+        <h3>Câmara</h3>
+        <p>Gestão sem papel, com dados de cada região para decidir.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 07 · ZERO PAPEL + PESQUISAS -->
+  <section class="slide pp" data-theme="paper" data-title="Zero papel e pesquisas" data-sec="Gestão" data-ctrl="paper">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Gestão</p>
+      <h2 class="pp-title rv" style="--d:.08s">Câmara sem papel e que<br><span>escuta cada região.</span></h2>
+    </div>
+    <div class="cells2">
+      <article class="cell rv" style="--d:.2s">
+        <div class="ui"><div class="ui-head"><b>Tramitação · PL 045/2026</b><span class="chip">Rastreável</span></div>
+          <div class="ui-body pipe-body">
+            <div class="pipe"><div class="pipe-line"><i class="pipe-fill"></i></div><div class="pipe-stops"></div></div>
+            <ol class="log"></ol>
+          </div>
+        </div>
+        <span class="cell-n">01</span>
+        <h3>Câmara Zero Papel</h3>
+        <p>Do protocolo ao arquivo, sem papel. Tudo rastreável: quem fez, quando e em que etapa está.</p>
+      </article>
+      <article class="cell rv" style="--d:.3s">
+        <div class="ui"><div class="ui-head"><b>Mapa da cidade</b><div class="seg"><button class="on" data-mode="dem">Demandas</button><button data-mode="pes">Pesquisa</button></div></div>
+          <div class="ui-body map-body"><div class="map"><svg class="map-svg" viewBox="0 0 760 400"></svg><div class="map-tip"></div></div></div>
+        </div>
+        <span class="cell-n">02</span>
+        <h3>Pesquisas regionalizadas</h3>
+        <p>Pesquisas por bairro no app e no WhatsApp, com resultados no mapa ao lado das demandas.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 08 · JORNADA -->
+  <section class="slide pp" data-theme="paper" data-title="A jornada da Dona Maria" data-sec="Na prática" data-ctrl="journey">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Na prática</p>
+      <h2 class="pp-title rv" style="--d:.08s">A jornada da<br><span>Dona Maria.</span></h2>
+    </div>
+    <ol class="steps rv" style="--d:.16s">
+      <li>Manda mensagem no WhatsApp oficial</li>
+      <li>A IA pede foto e local e gera protocolo</li>
+      <li>Demanda cai no Painel do Vereador</li>
+      <li>Vereador responde e faz a indicação</li>
+      <li>Ela acompanha sem ligar para ninguém</li>
+      <li>Recebe convite para audiência pública</li>
+      <li>Assiste à sessão ao vivo pelo celular</li>
+      <li>Avalia o atendimento</li>
+    </ol>
+    <button class="play btn btn-grey rv" style="--d:.24s"><span class="ic" data-icon="play"></span><span class="pl-t">Reproduzir jornada</span></button>
+    <div class="side rv" style="--d:.2s">
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="screens">
+          <div class="scr chat">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Câmara Municipal</b><small>Canal oficial</small></span></div>
+              <div class="msgs">
+                <p class="day">Hoje</p>
+                <p class="m out">Boa tarde! Tem um buraco enorme na minha rua. Já caiu moto lá.<time>14:02</time></p>
+                <p class="m in">Olá, Maria! Sou a assistente da Câmara. Vou registrar sua demanda e encaminhar para o vereador responsável.<time>14:02</time></p>
+                <p class="m in typing"><i></i><i></i><i></i></p>
+              </div>
+            </div>
+            <div class="scr chat">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Câmara Municipal</b><small>Canal oficial</small></span></div>
+              <div class="msgs">
+                <p class="m in">Pode me mandar uma foto e a localização?<time>14:03</time></p>
+                <div class="m out photo"><span class="ic" data-icon="camera"></span><time>14:04</time></div>
+                <p class="m out loc"><span class="ic" data-icon="pin"></span>Rua das Acácias, 210<br><small>Bairro São José</small><time>14:04</time></p>
+                <p class="m in proto">Protocolo gerado<b>nº 2026-001284</b>Você recebe cada atualização por aqui.<time>14:04</time></p>
+              </div>
+            </div>
+            <div class="scr dash">
+              <div class="dash-bar"><span data-seat></span><b>Painel do Vereador</b></div>
+              <div class="dash-body">
+                <p class="dash-k">Novas demandas <b>3</b></p>
+                <div class="dem hot"><span class="tag">Novo</span><b>Buraco na via</b><small>São José · Infraestrutura · há 2 min</small></div>
+                <div class="dem"><b>Iluminação pública</b><small>Centro · Infraestrutura · ontem</small></div>
+                <div class="dem"><b>Poda de árvore</b><small>Vila Nova · Meio ambiente · 2 dias</small></div>
+                <p class="dash-k">Demandas por bairro</p>
+                <div class="bars"><span style="--w:88%">São José</span><span style="--w:64%">Centro</span><span style="--w:46%">Vila Nova</span><span style="--w:30%">Boa Vista</span></div>
+              </div>
+            </div>
+            <div class="scr chat">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Câmara Municipal</b><small>Canal oficial</small></span></div>
+              <div class="msgs">
+                <p class="m in proto">Protocolo nº 2026-001284<b>Resposta do vereador</b><time>16:40</time></p>
+                <p class="m in">Maria, estive no local hoje. Protocolei a <b>Indicação nº 112/2026</b> pedindo o reparo da via à Prefeitura.<time>16:41</time></p>
+                <p class="m out">Muito obrigada!<time>16:45</time></p>
+              </div>
+            </div>
+            <div class="scr track">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Acompanhar protocolo</b><small>nº 2026-001284</small></span></div>
+              <ol class="tl">
+                <li class="ok"><b>Recebida</b><small>14:04 · WhatsApp oficial</small></li>
+                <li class="ok"><b>Encaminhada ao vereador</b><small>14:05 · triagem automática</small></li>
+                <li class="ok"><b>Indicação nº 112/2026</b><small>16:40 · enviada à Prefeitura</small></li>
+                <li class="now"><b>Em execução</b><small>aguardando a Prefeitura</small></li>
+                <li><b>Concluída</b><small>você será avisada</small></li>
+              </ol>
+            </div>
+            <div class="scr invite">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Câmara Municipal</b><small>Canal oficial</small></span></div>
+              <div class="inv">
+                <span class="inv-k">Convite · Audiência pública</span>
+                <h4>Mobilidade e vias do Bairro São José</h4>
+                <p><span class="ic" data-icon="clock"></span>Quinta, 19h</p>
+                <p><span class="ic" data-icon="pin"></span>Plenário da Câmara</p>
+                <button class="inv-yes">Vou participar</button>
+                <button class="inv-no">Lembrar depois</button>
+              </div>
+            </div>
+            <div class="scr live">
+              <div class="video">
+                <svg class="mini-hemi" data-n="40" viewBox="0 0 220 120"></svg>
+                <span class="onair"><i></i>Ao vivo</span>
+              </div>
+              <div class="live-info">
+                <b>Sessão ordinária</b>
+                <small>Em pauta: Indicação nº 112/2026 · Bairro São José</small>
+              </div>
+            </div>
+            <div class="scr rate">
+              <div class="app-bar"><span class="av" data-seat></span><span><b>Câmara Municipal</b><small>Canal oficial</small></span></div>
+              <div class="rate-box">
+                <h4>Como foi o atendimento?</h4>
+                <div class="stars"><button>★</button><button>★</button><button>★</button><button>★</button><button>★</button></div>
+                <p class="thanks">Obrigada pela avaliação.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · LIBRAS -->
+  <section class="slide pp" data-theme="paper" data-title="E se fosse surda?" data-sec="Acessibilidade">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Acessibilidade</p>
+      <h2 class="pp-title rv" style="--d:.08s">E se a Dona Maria<br><span>fosse surda?</span></h2>
+    </div>
+    <ul class="feats side-feats rv" style="--d:.24s">
+      <li><span class="ic-box"><span class="ic" data-icon="hand"></span></span><p><b>Atendida do mesmo jeito.</b> Atendimento em LIBRAS por avatar, no próprio canal.</p></li>
+      <li><span class="ic-box"><span class="ic" data-icon="tv"></span></span><p><b>Videochamada com tradução.</b> Quando precisa de gente, o atendimento continua acessível.</p></li>
+    </ul>
+    <div class="side rv" style="--d:.2s">
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="screens">
+          <div class="scr vcall on">
+            <span class="lib-badge">LIBRAS</span>
+            <svg class="avatar" viewBox="0 0 300 420">
+              <path class="av-body" d="M40 420 C 50 300, 100 270, 150 270 C 200 270, 250 300, 260 420 Z"/>
+              <rect class="av-neck" x="132" y="220" width="36" height="60" rx="16"/>
+              <circle class="av-head" cx="150" cy="170" r="66"/>
+              <g class="arm arm-l"><path d="M92 300 L 70 360"/><circle class="hand" cx="70" cy="360" r="20"/></g>
+              <g class="arm arm-r"><path d="M208 300 L 230 360"/><circle class="hand" cx="230" cy="360" r="20"/></g>
+            </svg>
+            <p class="subs">Olá, Maria! Sua demanda foi recebida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · O QUE CADA UM GANHA -->
+  <section class="slide pp" data-theme="paper" data-title="O que cada um ganha" data-sec="Valor">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Valor</p>
+      <h2 class="pp-title rv" style="--d:.08s">O que cada<br><span>um ganha.</span></h2>
+    </div>
+    <div class="cells4">
+      <article class="cell frag"><div class="ui"><div class="ui-head"><b>Histórico</b><span class="chip">Registrado</span></div><ul class="rows"><li><span class="ic" data-icon="file"></span>Indicação 112/2026</li><li><span class="ic" data-icon="clipboard"></span>Pedido de informação</li><li><span class="ic" data-icon="users"></span>Audiência pública</li></ul></div><div><span class="cell-n">01</span><h3>Vereador</h3><p>Prova do trabalho que faz, registrada e organizada.</p></div></article>
+      <article class="cell frag"><div class="ui"><div class="ui-head"><b>Painel de gestão</b><span class="chip">Mesa</span></div><ul class="rows"><li><span class="ic" data-icon="gauge"></span>Demandas do mês</li><li><span class="ic" data-icon="clock"></span>Tempo de resposta</li><li><span class="ic" data-icon="pin"></span>Bairros atendidos</li></ul></div><div><span class="cell-n">02</span><h3>Presidente e Mesa</h3><p>A marca da gestão: a Câmara que responde.</p></div></article>
+      <article class="cell frag"><div class="ui"><div class="ui-head"><b>Avisos</b><span class="chip">Enviados</span></div><ul class="rows"><li><span class="ic" data-icon="tv"></span>Sessão ordinária ao vivo</li><li><span class="ic" data-icon="megaphone"></span>Convite para audiência</li><li><span class="ic" data-icon="file"></span>Pauta da semana</li></ul></div><div><span class="cell-n">03</span><h3>Comunicação e TV Câmara</h3><p>Cada sessão vira aviso no celular de quem se interessa.</p></div></article>
+      <article class="cell frag"><div class="ui"><div class="ui-head"><b>Triagem</b><span class="chip">Ouvidoria</span></div><ul class="rows"><li><span class="ic" data-icon="grid"></span>Classificada por tema</li><li><span class="ic" data-icon="user"></span>Encaminhada ao servidor</li><li><span class="ic" data-icon="clipboard"></span>Respondida ao cidadão</li></ul></div><div><span class="cell-n">04</span><h3>Ouvidoria e servidores</h3><p>A IA faz a triagem; o servidor cuida do que precisa de gente.</p></div></article>
+    </div>
+  </section>
+
+  <!-- 11 · SEGURANÇA E LEI -->
+  <section class="slide pp" data-theme="paper" data-title="Seguro e dentro da lei" data-sec="Confiança">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Confiança</p>
+      <h2 class="pp-title rv" style="--d:.08s">Seguro, acessível e<br><span>dentro da lei.</span></h2>
+    </div>
+    <div class="cells2">
+      <article class="cell rv" style="--d:.2s">
+        <ul class="feats">
+          <li><span class="ic-box"><span class="ic" data-icon="file"></span></span><p><b>IA que mostra a fonte.</b> Cada resposta cita o documento oficial. Na dúvida, passa para uma pessoa.</p></li>
+          <li><span class="ic-box"><span class="ic" data-icon="hand"></span></span><p><b>Acessibilidade real.</b> Avatar em LIBRAS e videochamada com tradução.</p></li>
+          <li><span class="ic-box"><span class="ic" data-icon="lock"></span></span><p><b>Privacidade.</b> Consentimento, opção de sair e auditoria de cada envio.</p></li>
+        </ul>
+      </article>
+      <article class="cell rv" style="--d:.3s">
+        <div class="ui"><div class="ui-head"><b>Respaldo legal</b><span class="chip">5 leis</span></div>
+          <ol class="laws2">
+            <li><span>2011</span><b>Lei 12.527</b><span>Acesso à Informação</span></li>
+            <li><span>2015</span><b>Lei 13.146</b><span>Inclusão e acessibilidade</span></li>
+            <li><span>2017</span><b>Lei 13.460</b><span>Direitos do usuário e ouvidoria</span></li>
+            <li><span>2018</span><b>Lei 13.709</b><span>LGPD</span></li>
+            <li><span>2021</span><b>Lei 14.133</b><span>Contratação de serviço contínuo</span></li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 12 · FOCO -->
+  <section class="slide pp" data-theme="paper" data-title="Nosso foco" data-sec="Posicionamento">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Posicionamento</p>
+      <h2 class="pp-title rv" style="--d:.08s">Nosso foco é a relação entre<br><span>a Câmara e o cidadão.</span></h2>
+    </div>
+    <div class="cells2">
+      <article class="cell rv" style="--d:.2s">
+        <p class="cell-big">Mais que um sistema legislativo: um produto feito para aproximar quem representa de quem é representado.</p>
+      </article>
+      <article class="cell rv" style="--d:.3s">
+        <div class="ui"><div class="ui-head"><b>Relação</b><span class="chip">Em mão dupla</span></div>
+          <div class="ui-body link-body">
+            <span class="pillx"><span data-seat></span>Quem representa</span>
+            <svg class="link-svg" viewBox="0 0 300 12"><path id="lk" d="M0 6 H300"/>
+              <circle r="4"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#lk"/></animateMotion></circle>
+              <circle r="4"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk"/></animateMotion></circle>
+            </svg>
+            <span class="pillx"><span class="ic" data-icon="users"></span>Quem é representado</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 13 · PRÓXIMO PASSO -->
+  <section class="slide pp" data-theme="paper" data-title="Próximo passo" data-sec="Próximo passo" data-ctrl="next">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Próximo passo</p>
+      <h2 class="pp-title rv" style="--d:.08s">Escolha um para sair da<br><span>reunião com data marcada.</span></h2>
+    </div>
+    <div class="cells2">
+      <article class="cell rv" style="--d:.2s">
+        <ul class="outs2">
+          <li><b>Cidadão</b><span>passa a enxergar a Câmara</span></li>
+          <li><b>Vereador</b><span>tem as demandas organizadas</span></li>
+          <li><b>Mesa</b><span>tem dados para decidir</span></li>
+        </ul>
+      </article>
+      <article class="cell rv" style="--d:.3s">
+        <div class="ui"><div class="ui-head"><b>Próximo passo</b><span class="chip">Escolha um</span></div>
+          <button class="opt" data-opt="1"><span class="o-n">01</span><span class="o-t">Reunião técnica com comunicação, ouvidoria e TI</span><span class="o-r"></span></button>
+          <button class="opt" data-opt="2"><span class="o-n">02</span><span class="o-t">Demonstração com o nome, os bairros e as comissões da <span data-bind="camara-short">Câmara</span></span><span class="o-r"></span></button>
+          <button class="opt" data-opt="3"><span class="o-n">03</span><span class="o-t">Proposta comercial dimensionada para o porte do município</span><span class="o-r"></span></button>
+          <div class="when"><span>Data marcada</span><input type="date" class="when-in"></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 14 · FECHAMENTO -->
+  <section class="slide pp" data-theme="paper" data-title="Fechamento" data-sec="Encerramento">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Encerramento</p>
+      <h2 class="pp-title rv" style="--d:.08s">A Câmara já trabalha para a cidade.<br><span>O Legislativo Conectado faz a cidade ver isso.</span></h2>
+    </div>
+    <div class="band rv" style="--d:.2s">
+      <svg class="close-rings" viewBox="0 0 1920 580">
+        <circle cx="960" cy="290" r="96"/><circle cx="960" cy="290" r="150" class="dashed"/><circle cx="960" cy="290" r="212"/><circle cx="960" cy="290" r="290" class="dashed"/>
+      </svg>
+      <div class="close-core"><span data-seat></span></div>
+    </div>
+  </section>
+
+  <!-- 15 · FAQ -->
+  <section class="slide pp" data-theme="paper" data-title="Perguntas frequentes" data-sec="Apêndice">
+    <div class="pp-head">
+      <p class="pp-eyebrow rv">Apêndice</p>
+      <h2 class="pp-title rv" style="--d:.08s">Perguntas<br><span>frequentes.</span></h2>
+    </div>
+    <div class="faq rv" style="--d:.2s">
+      <details><summary>Já temos site e TV Câmara</summary><p>Entra no site como widget e usa a transmissão atual. Conecta, não substitui.</p></details>
+      <details><summary>Vereadores já usam WhatsApp pessoal</summary><p>Continuam podendo; o canal oficial gera registro e protege o vereador.</p></details>
+      <details><summary>E se a IA errar?</summary><p>Responde só com fonte oficial e passa para uma pessoa na dúvida.</p></details>
+      <details><summary>Somos uma Câmara pequena</summary><p>Justamente: a IA faz a triagem e o servidor cuida do essencial.</p></details>
+      <details><summary>Uso eleitoral?</summary><p>Canal institucional, regras do período eleitoral e auditoria dos envios.</p></details>
+      <details><summary>Quanto custa?</summary><p>Serviço mensal, dimensionado ao porte do município.</p></details>
+    </div>
+  </section>
+
+  <!-- UI -->
+  <div class="progress"><i></i></div>
+  <nav class="ctrls">
+    <button data-act="prev" aria-label="Anterior"><span class="ic" data-icon="left"></span></button>
+    <span class="count"></span>
+    <button data-act="next" aria-label="Próximo"><span class="ic" data-icon="right"></span></button>
+    <button data-act="grid" aria-label="Visão geral"><span class="ic" data-icon="grid"></span></button>
+    <button data-act="full" aria-label="Tela cheia"><span class="ic" data-icon="expand"></span></button>
+  </nav>
+  <div class="overview"><div class="ov-grid"></div></div>
+</div>
+
+<script src="assets/logo-data.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>
